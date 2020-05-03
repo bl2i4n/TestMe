@@ -1,0 +1,53 @@
+
+.banner h1, .banner h3, .banner h6 {
+    margin: 0;
+    text-shadow: 2px 2px 20px #000;
+    text-align: center;
+  }
+
+.banner {
+    color: white;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'IBM Plex Serif';
+  }
+
+.image{
+    background: url('src/assets/images/envato-4966945_1920.jpg') no-repeat;
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;   
+}
+
+span {
+    padding-right: 1rem;
+}
+
+.row .column {
+    width: 32%;
+  }
+  
+  /* Clear floats after the columns */
+  .row {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+  }
+
+  .btm-section{
+      padding-top: 20px;
+      text-align: center;
+  }
+
+  .material-icons.md-48 { font-size: 48px; }
+
+
+  .banner-text {
+    font-family: 'IBM Plex Serif';
+    text-shadow: 2px 2px 20px #000;
+  }
