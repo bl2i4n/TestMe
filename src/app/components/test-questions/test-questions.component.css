@@ -40,14 +40,40 @@ span {
   }
 
   .btm-section{
-      padding-top: 20px;
+      font-size: 20px;
+      padding-top: 10px;
       text-align: center;
+      font-weight: bold;
+
   }
 
-  .material-icons.md-48 { font-size: 48px; }
+  .material-icons.md-48 { 
+      font-size: 48px; 
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
 
 
   .banner-text {
     font-family: 'IBM Plex Serif';
     text-shadow: 2px 2px 20px #000;
+  }
+
+  .extra-shadow {
+    text-shadow: 1px 1px 20px black, 0 0 25px black, 0 0 5px black;
+  }
+
+  .features {
+      font-size: 20px;
+      font-family: 'IBM Plex Serif';
+
+  }
+
+  .btm-text {
+    padding-bottom: 13px;
+
+  }
+
+  .btm-button {
+      font-size: 25px;
   }
