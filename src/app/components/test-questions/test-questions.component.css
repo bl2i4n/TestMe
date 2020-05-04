@@ -77,3 +77,8 @@ span {
   .btm-button {
       font-size: 25px;
   }
+
+  #future {
+    font-style: italic;
+    padding-bottom:10px;
+  }
