@@ -2,24 +2,23 @@
 <h2 class="top-section">The questions below will determine if you have the Covid-19 virus. Please answer the questions to the best of your knowledge</h2>
 
 <mat-horizontal-stepper linear>
-    <form #userForm="ngForm" novalidate>
-            <mat-step label="Question 1" completed=true>
-                <p class="questions">Are you experiencing a regular cough?</p>
-                    <mat-radio-group class="answers">
-                        <mat-radio-button value="1" name="Yes" ngModel ngDefaultControl (change)="log(test1)" #test1>Yes</mat-radio-button>
-                        <mat-radio-button value="2" name="No" ngModel ngDefaultControl (change)="log(test2)" #test2>No</mat-radio-button>
-                        <mat-radio-button value="3" name="idk" ngModel ngDefaultControl (change)="log(test3)" #test3>I'm not sure</mat-radio-button>
-                    </mat-radio-group>
-                    <div>
-                        <button mat-flat-button matStepperNext color="primary" class="submit" type="submit" (click)="handleClick()">Next</button>
-                    </div>
-                    <pre>
-                        TESTING:
-                        {{ userForm.value | json}}
-                    </pre>
-            </mat-step>
+    <form>
+    <mat-step label="Question 1">
+        <p class="questions">Are you experiencing a regular cough?</p>
+            <mat-radio-group class="answers">
+                <mat-radio-button value="1" name="Yes">Yes</mat-radio-button>
+                <mat-radio-button value="2" name="No">No</mat-radio-button>
+                <mat-radio-button value="3" name="idk">I'm not sure</mat-radio-button>
+            </mat-radio-group>
+            <div>
+                <button mat-flat-button matStepperNext color="primary" class="submit" type="submit">Next</button>
+            </div>
+            <!-- <pre>
+                TESTING: {{}}
+            </pre> -->
+    </mat-step>
     </form>
-    <mat-step label="Question 2" completed=false>
+    <mat-step label="Question 2">
         <p class="questions">Have you felt a shortness of breath or do you have difficulty breathing?</p>
         <mat-radio-group class="answers">
             <mat-radio-button value="1">Yes</mat-radio-button>
@@ -28,10 +27,10 @@
         </mat-radio-group>
         <div>
             <button mat-flat-button matStepperPrevious color="primary" class="submit">Back</button>
-            <button mat-flat-button matStepperNext color="primary" (click)="handleClick()">Next</button>
+            <button mat-flat-button matStepperNext color="primary">Next</button>
         </div>
     </mat-step>
-    <mat-step label="Question 3" completed=false>
+    <mat-step label="Question 3">
         <p class="questions">Have you felt feverish lately, e.g. your temperature is above 100 degrees Fahrenheit?</p>
         <mat-radio-group class="answers">
             <mat-radio-button value="1">Yes</mat-radio-button>
@@ -43,7 +42,7 @@
             <button mat-flat-button matStepperNext color="primary">Next</button>
         </div>
     </mat-step>
-    <mat-step label="Question 4" completed=false>
+    <mat-step label="Question 4">
         <p class="questions">Does your sense of temperature drastically change? Do you experience flashes of cold to hot sensations? e.g. chills?</p>
         <mat-radio-group class="answers">
             <mat-radio-button value="1">Yes</mat-radio-button>
@@ -55,7 +54,7 @@
             <button mat-flat-button matStepperNext color="primary">Next</button>
         </div>
     </mat-step>
-    <mat-step label="Question 5" completed=false>
+    <mat-step label="Question 5">
         <p class="questions">Do you have any sudden but consistent muscle pain?</p>
         <mat-radio-group class="answers">
             <mat-radio-button value="1">Yes</mat-radio-button>
@@ -68,7 +67,7 @@
         </div>
     </mat-step>
 
-    <mat-step label="Question 6" completed=false>
+    <mat-step label="Question 6">
         <p class="questions">Have you lost any senses of taste or smell? Can you smell the good food you cooked recently?</p>
         <mat-radio-group class="answers">
             <mat-radio-button value="1">Yes</mat-radio-button>
