@@ -1,5 +1,79 @@
 
 <h2 class="top-section">The questions below will determine if you have the Covid-19 virus. Please answer the questions to the best of your knowledge</h2>
 
+<mat-horizontal-stepper linear>
+    <mat-step label="Question 1" completed=false>
+        <p class="questions">Are you experiencing a regular c ough?</p>
+        <mat-radio-group class="answers" [(ngModel)]="selection">
+            <mat-radio-button value="1">Yes</mat-radio-button>
+            <mat-radio-button value="2">No</mat-radio-button>
+            <mat-radio-button value="3">I'm not sure</mat-radio-button>
+        </mat-radio-group>
+        <div>You selected:  {{selection}} </div>
+        <div>
+            <button mat-flat-button matStepperNext color="primary" class="submit" (click)="handleClick($event)">Next</button>
+        </div>
+    </mat-step>
+    <mat-step label="Question 2" completed=false>
+        <p class="questions">Have you felt a shortness of breath or do you have difficulty breathing?</p>
+        <mat-radio-group class="answers">
+            <mat-radio-button value="1">Yes</mat-radio-button>
+            <mat-radio-button value="2">No</mat-radio-button>
+            <mat-radio-button value="3">I'm not sure</mat-radio-button>
+        </mat-radio-group>
+        <div>
+            <button mat-flat-button matStepperPrevious color="primary" class="submit">Back</button>
+            <button mat-flat-button matStepperNext color="primary">Next</button>
+        </div>
+    </mat-step>
+    <mat-step label="Question 3" completed=false>
+        <p class="questions">Have you felt feverish lately, e.g. your temperature is above 100 degrees Fahrenheit?</p>
+        <mat-radio-group class="answers">
+            <mat-radio-button value="1">Yes</mat-radio-button>
+            <mat-radio-button value="2">No</mat-radio-button>
+            <mat-radio-button value="3">I'm not sure</mat-radio-button>
+        </mat-radio-group>
+        <div>
+            <button mat-flat-button matStepperPrevious color="primary" class="submit">Back</button>
+            <button mat-flat-button matStepperNext color="primary">Next</button>
+        </div>
+    </mat-step>
+    <mat-step label="Question 4" completed=false>
+        <p class="questions">Does your sense of temperature drastically change? Do you experience flashes of cold to hot sensations? e.g. chills?</p>
+        <mat-radio-group class="answers">
+            <mat-radio-button value="1">Yes</mat-radio-button>
+            <mat-radio-button value="2">No</mat-radio-button>
+            <mat-radio-button value="3">I'm not sure</mat-radio-button>
+        </mat-radio-group>
+        <div>
+            <button mat-flat-button matStepperPrevious color="primary" class="submit">Back</button>
+            <button mat-flat-button matStepperNext color="primary">Next</button>
+        </div>
+    </mat-step>
+    <mat-step label="Question 5" completed=false>
+        <p class="questions">Do you have any sudden but consistent muscle pain?</p>
+        <mat-radio-group class="answers">
+            <mat-radio-button value="1">Yes</mat-radio-button>
+            <mat-radio-button value="2">No</mat-radio-button>
+            <mat-radio-button value="3">I'm not sure</mat-radio-button>
+        </mat-radio-group>
+        <div>
+            <button mat-flat-button matStepperPrevious color="primary" class="submit">Back</button>
+            <button mat-flat-button matStepperNext color="primary">Next</button>
+        </div>
+    </mat-step>
 
+    <mat-step label="Question 6" completed=false>
+        <p class="questions">Have you lost any senses of taste or smell? Can you smell the good food you cooked recently?</p>
+        <mat-radio-group class="answers">
+            <mat-radio-button value="1">Yes</mat-radio-button>
+            <mat-radio-button value="2">No</mat-radio-button>
+            <mat-radio-button value="3">I'm not sure</mat-radio-button>
+        </mat-radio-group>
+        <div>
+            <button mat-flat-button matStepperPrevious color="primary" class="submit">Back</button>
+            <button mat-flat-button matStepperNext color="primary">Submit</button>
+        </div>
+    </mat-step>
+</mat-horizontal-stepper>
 
