@@ -1,27 +1,24 @@
 # DoIHaveIt
 
+This project is for Dev Chat's hackathon. Unfortunately this project was unable to be completed but alot of the frontend and styling is complete.
+
+## Purpose
+
+The main reason I wanted to make this app is undoubtedly for the circumstances we're all in. In the early days of the pandemic (which doesn't seem far) there was alot of uncertainty around how to get tested. I wanted to gather the definite questions medical professionals were asking to determine if you needed to get tested. Ultimately this app would ask those same questions, find out if you need to get actually tested and point you to your nearest test center.
+
+## Blockers
+
+I am new to Angular and Typescript and this posed a blocker when attempting to retrieve the values from the selected radio buttons. I was unable to create a reactive form and get the values. I also tried using ngmodel or template reference variables but could not pass down the html element values to the proper component. I wanted to get the values from the selected radio buttons and based on these values have some logic to show if you had the virus or not.
+
+## Tools
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.
 
-## Development server
+### Future Development
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- Google Maps API for actual testing centers.
+- Twilio API for contacting friends and family to quarantine themselves if you have the virus.
 
-## Code scaffolding
+### Thanks for checking my app out!
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Open for any feedback #DevChat @BrianD
